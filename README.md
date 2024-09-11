@@ -1,4 +1,4 @@
-# Flutter ShadcnUI Starter APP 
+# A Flutter ShadcnUI Starter App
 
 Support Light and Dark Mode with 12 Color Scheme
 
