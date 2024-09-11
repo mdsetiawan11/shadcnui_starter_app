@@ -1,10 +1,10 @@
-# Shadcn UI Starter APP Flutter
+# Flutter ShadcnUI Starter APP 
 
 Support Light and Dark Mode with 12 Color Scheme
 
 ## Packages Used
 
-- Shadcn UI
+- ShadcnUI
 - Provider
 - Google Fonts
 - Go Router
