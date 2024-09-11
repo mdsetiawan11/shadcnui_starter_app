@@ -34,6 +34,7 @@ class _HomePageState extends State<HomePage> {
       drawer: BuildDrawer(isDarkMode: isDarkMode, themeProvider: themeProvider),
       body: const Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ShadButton(
               child: Text('Button'),
