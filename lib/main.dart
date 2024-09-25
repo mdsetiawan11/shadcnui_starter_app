@@ -7,8 +7,12 @@ import 'package:shadcnui_starter_app/presentation/home_page.dart';
 import 'package:shadcnui_starter_app/providers/theme_provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-      create: (context) => ThemeProvider(), child: const MyApp()));
+  runApp(
+    ChangeNotifierProvider(
+      create: (context) => ThemeProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 final GoRouter _router = GoRouter(

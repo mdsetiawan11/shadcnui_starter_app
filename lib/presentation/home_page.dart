@@ -32,11 +32,24 @@ class _HomePageState extends State<HomePage> {
         }),
       ),
       drawer: BuildDrawer(isDarkMode: isDarkMode, themeProvider: themeProvider),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ShadButton(
+            Text(
+              'Text',
+              style: ShadTheme.of(context).textTheme.h3,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const ShadCard(
+              child: Text('Card'),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const ShadButton(
               child: Text('Button'),
             )
           ],
