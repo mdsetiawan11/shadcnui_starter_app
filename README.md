@@ -1,16 +1,13 @@
-# shadcnui_starter_app
+# A Flutter ShadcnUI Starter App
 
-A new Flutter project.
+Support Light and Dark Mode with 12 Color Scheme
 
-## Getting Started
+## Packages Used
 
-This project is a starting point for a Flutter application.
+- ShadcnUI
+- Provider
+- Google Fonts
+- Go Router
+- Shared Preferenes
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![capture](https://github.com/user-attachments/assets/5bdf621f-3d1e-4c51-87a5-cab098a6e07f)
