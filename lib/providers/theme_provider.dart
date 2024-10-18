@@ -9,7 +9,6 @@ class ThemeProvider with ChangeNotifier {
   ShadColorScheme _darkColorScheme = colorScheme[0].dark;
   int _selectedColorScheme = 0;
 
-  // Load saved color scheme on initialization
   ThemeProvider() {
     _loadSelectedColorScheme();
   }
@@ -19,13 +18,11 @@ class ThemeProvider with ChangeNotifier {
   ShadColorScheme get darkColorScheme => _darkColorScheme;
   int get selectedColorScheme => _selectedColorScheme;
 
-  // Toggle between light and dark theme
   void toggleTheme(bool isDarkMode) {
     _themeMode = isDarkMode ? ThemeMode.dark : ThemeMode.light;
     notifyListeners();
   }
 
-  // Change color scheme and save it to SharedPreferences
   void changeColorScheme(int index) async {
     _selectedColorScheme = index;
     _lightColorScheme = colorScheme[index].light;
@@ -34,13 +31,11 @@ class ThemeProvider with ChangeNotifier {
     await _saveSelectedColorScheme(index); // Save the selected color scheme
   }
 
-  // Save selected color scheme to SharedPreferences
   Future<void> _saveSelectedColorScheme(int index) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setInt('selectedColorScheme', index);
   }
 
-  // Load selected color scheme from SharedPreferences
   Future<void> _loadSelectedColorScheme() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     int? savedIndex = prefs.getInt('selectedColorScheme');
